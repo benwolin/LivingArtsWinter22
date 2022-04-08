@@ -1,0 +1,14 @@
+[Unit]
+Description=Athena Monitor
+After=network.target
+
+[Service]
+ExecStart=bash FaceStart.sh
+WorkingDirectory=/home/pi/LivingArtsWinter22
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
